@@ -1,6 +1,6 @@
 # Martin Arthur Andersen — personal academic website
 
-Static personal website for **Martin Arthur Andersen**, PhD Research Fellow at Østfold University College.
+Static personal website for **Martin Arthur Andersen**, PhD Research Fellow at Østfold University of Applied Sciences.
 
 **Website:** https://nettking.github.io/
 

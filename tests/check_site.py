@@ -181,6 +181,16 @@ class SiteChecks(unittest.TestCase):
         self.assertNotIn("Evry", home)
         self.assertFalse(list(ROOT.rglob("*.pdf")), "Do not publish the supplied CV attachment")
 
+    def test_current_institution_name(self):
+        current_name = "Østfold University of Applied Sciences"
+        for page in ("index.html", "cv.html"):
+            with self.subTest(page=page):
+                text = (ROOT / page).read_text(encoding="utf-8")
+                self.assertIn(current_name, text)
+                self.assertNotIn("Østfold University College", text)
+                self.assertIn("Høgskolen i Østfold", text)
+        self.assertIn(current_name, (ROOT / "README.md").read_text(encoding="utf-8"))
+
     def test_metadata_and_hosting(self):
         html = (ROOT / "index.html").read_text(encoding="utf-8")
         matches = re.findall(r'<script type="application/ld\+json">\s*(.*?)\s*</script>', html, re.S)
@@ -188,6 +198,7 @@ class SiteChecks(unittest.TestCase):
         data = json.loads(matches[0])
         self.assertEqual(data["name"], "Martin Arthur Andersen")
         self.assertEqual(data["email"], "mailto:martin.a.andersen@hiof.no")
+        self.assertEqual(data["affiliation"]["name"], "Østfold University of Applied Sciences")
         self.assertTrue((ROOT / ".nojekyll").exists())
         tree = ElementTree.parse(ROOT / "sitemap.xml")
         ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}

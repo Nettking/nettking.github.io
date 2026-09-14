@@ -2,6 +2,15 @@
 
 Reviewed **14 September 2026**. This file records only public information included on the site; it is not a list of excluded work.
 
+## Current institutional name
+
+The current English name is **Østfold University of Applied Sciences**. The Norwegian name remains **Høgskolen i Østfold**. Martin flagged the 2026 English-name change on 14 September 2026.
+
+- Official English homepage: https://www.hiof.no/english/
+- Official doctoral-programme page: https://www.hiof.no/english/research/phd-programme/
+
+Both official pages use the current English name in indexed page titles and text checked on 14 September 2026; direct automated retrieval was unavailable. The website and CV use the current institutional name consistently, including when identifying the institution in earlier education and employment entries. Publication titles, citations, and bibliographic records are unchanged.
+
 ## Professional profile and education
 
 - HiØ English staff profile: https://www.hiof.no/iio/english/people/aca/martiaan/
@@ -45,7 +54,7 @@ The GitHub identity `Nettking` is the owner's supplied account. No unverified OR
 
 On 14 September 2026, Martin approved the recommended professional additions from his supplied CV. The CV is the source for:
 
-- PhD Research Fellow, Østfold University College, 2025–present; Research Assistant, 2023. No research-assistant responsibilities or project description have been added.
+- PhD Research Fellow, Østfold University of Applied Sciences, 2025–present; Research Assistant, 2023. No research-assistant responsibilities or project description have been added.
 - Master’s studies, 2022–2024, specialising in Machine Learning & Cyber-Physical Systems; bachelor’s studies, 2019–2022, specialising in Computer Security & Cyber-Physical Systems. “Computer Security” translates the CV’s “Datasikkerhet”; the existing degree headings are retained.
 - The student-leadership appointments and dates recorded above.
 - Faculty Board employee representative, from 2025.
