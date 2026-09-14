@@ -152,6 +152,35 @@ class SiteChecks(unittest.TestCase):
         self.assertLess(len(image_bytes), 100_000)
         self.assertIn("assets/portrait.css", self.documents["index.html"].assets)
 
+    def test_approved_background_and_service(self):
+        for page in ("index.html", "cv.html"):
+            text = (ROOT / page).read_text(encoding="utf-8")
+            for expected in (
+                "2025–present", "Research Assistant", "2022–2024", "2019–2022",
+                "Machine Learning &amp; Cyber-Physical Systems",
+                "Computer Security &amp; Cyber-Physical Systems",
+                "Faculty of Computer Science, Engineering and Economics (IIØ)",
+                "Department of Computer Science and Communication (ITK)",
+                "Social committee member", "Student Leader", "2024–2025",
+            ):
+                with self.subTest(page=page, expected=expected):
+                    self.assertIn(expected, text)
+            self.assertIn("assets/background.css", self.documents[page].assets)
+        cv = (ROOT / "cv.html").read_text(encoding="utf-8")
+        for expected in (
+            "Fakultet for informasjonsteknologi, ingeniørfag og økonomi",
+            "Institutt for informasjonsteknologi og kommunikasjon",
+            "Klagenemnda", "Utdanningskvalitetsutvalget", "Sentralt Forskningsutvalg",
+            "2018–2021", "Elkjøp Halden", "2015–2016", "Evry",
+        ):
+            self.assertIn(expected, cv)
+        self.assertEqual(cv.count('data-service-id="education-deputy"'), 1)
+        self.assertIn("Current · Social committee member", cv)
+        home = (ROOT / "index.html").read_text(encoding="utf-8")
+        self.assertNotIn("Elkjøp Halden", home)
+        self.assertNotIn("Evry", home)
+        self.assertFalse(list(ROOT.rglob("*.pdf")), "Do not publish the supplied CV attachment")
+
     def test_metadata_and_hosting(self):
         html = (ROOT / "index.html").read_text(encoding="utf-8")
         matches = re.findall(r'<script type="application/ld\+json">\s*(.*?)\s*</script>', html, re.S)

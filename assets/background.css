@@ -1,0 +1,15 @@
+/* Education periods and the approved service section. */
+.background-content,.service-card,.cv-section>div{min-width:0}
+.timeline li{grid-template-columns:100px minmax(0,1fr)}
+.timeline-date{line-height:1.5}
+.service-grid{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:42px}
+.service-card{border-top:1px solid var(--line);padding-top:24px}
+.service-card .micro-label{margin-bottom:12px}
+.service-card h3{font-size:1.05rem;margin-bottom:16px}
+.service-card p:not(.micro-label){font-size:.86rem;color:var(--muted);line-height:1.8}
+.service-card strong{color:var(--ink);font-weight:600}
+.service-card a:not(.text-link){text-decoration-thickness:1px}
+.cv-section .muted[lang="nb"]{font-size:.76rem}
+@media(max-width:760px){.service-grid{grid-template-columns:1fr;gap:25px;margin-top:6px}.timeline li{grid-template-columns:88px minmax(0,1fr);gap:16px}}
+@media(max-width:370px){.timeline li{grid-template-columns:76px minmax(0,1fr);gap:12px}.timeline-date{font-size:10px}}
+@media print{.cv-section{padding-block:9pt}.cv-section p{margin-bottom:7pt}.cv-section .cv-item+.cv-item{margin-top:12pt}.service-grid{gap:20pt;margin-top:20pt}.service-card{break-inside:avoid}.cv-section .cv-item{break-inside:avoid}.cv-section .muted[lang="nb"]{font-size:9pt}}
