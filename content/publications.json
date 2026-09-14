@@ -1,0 +1,19 @@
+{
+  "reviewed_on": "2026-09-14",
+  "policy": "Only verified, formally published research. A public repository or preprint alone is not publication clearance.",
+  "publications": [
+    {
+      "id": "haugen2025dartwin",
+      "status": "published",
+      "title": "DarTwin made precise by SysMLv2 – An Experiment",
+      "year": 2025,
+      "doi": "10.1109/MODELS-C68889.2025.00051",
+      "authors": ["Øystein Haugen", "Stefan Klikovits", "Martin Arthur Andersen", "Jonathan Beaulieu", "Francis Bordeleau", "Joachim Denil", "Joost Mertens"],
+      "pages": "322–332",
+      "venue": "SAM 2025, in ACM/IEEE MODELS-C 2025",
+      "publication_evidence": "https://research.jku.at/en/publications/dartwin-made-precise-by-sysmlv2-an-experiment/",
+      "award_evidence": "https://sdl-forum.org/Events/SAM2025/papers.php",
+      "author_version": "https://arxiv.org/abs/2510.12478"
+    }
+  ]
+}
