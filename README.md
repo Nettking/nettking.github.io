@@ -16,7 +16,7 @@ Read [AGENTS.md](AGENTS.md) before editing. Public-source provenance is in [SOUR
 
 - `index.html`: profile, research interests, published research, education, service, contact.
 - `cv.html`: short academic CV with browser print / save-as-PDF support.
-- `assets/`: local CSS, progressive-enhancement JavaScript, monogram favicon, and publication BibTeX.
+- `assets/`: local CSS, progressive-enhancement JavaScript, monogram favicon, owner-supplied portrait, and publication BibTeX.
 - `404.html`, `robots.txt`, `sitemap.xml`, `.nojekyll`: static hosting and discovery.
 - `tests/check_site.py`: dependency-free structural and publication-consistency checks.
 
@@ -45,4 +45,4 @@ Update the relevant HTML and, for publications, the reviewed JSON allowlist and 
 
 Automated checks test structure and consistency, **not** whether a research contribution is genuinely published or whether new text is safe to disclose. Human source review remains necessary. Do not store rejected or excluded research items in this repository.
 
-The page uses a typographic design; no third-party portrait or institutional logo has been copied. Published papers are linked rather than redistributed.
+The page uses a typographic design with a portrait supplied and approved by Martin. No third-party portrait or institutional logo has been copied. Published papers are linked rather than redistributed.

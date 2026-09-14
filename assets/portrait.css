@@ -1,0 +1,37 @@
+/* Owner-supplied portrait. Keep the full square composition on every screen. */
+.hero-portrait {
+  margin: 0;
+  width: 100%;
+  align-self: center;
+}
+.hero-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+}
+.hero-portrait figcaption {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: .65rem;
+  line-height: 1.5;
+}
+@media (max-width: 760px) {
+  .hero-portrait {
+    grid-row: 1;
+    width: 160px;
+    max-width: 100%;
+  }
+  .hero-portrait figcaption {
+    display: none;
+  }
+}
+@media print {
+  .hero-portrait { display: none; }
+}

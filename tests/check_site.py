@@ -138,6 +138,20 @@ class SiteChecks(unittest.TestCase):
             text = (ROOT / page).read_text(encoding="utf-8")
             self.assertNotRegex(text.lower(), r"\b(?:under review|in preparation|forthcoming|submission planned|unpublished manuscript)\b")
 
+    def test_profile_portrait(self):
+        portraits = [image for image in self.documents["index.html"].images
+                     if image.get("src") == "assets/portrait.webp"]
+        self.assertEqual(len(portraits), 1)
+        portrait = portraits[0]
+        self.assertEqual(portrait["alt"], "Portrait of Martin Arthur Andersen")
+        self.assertEqual((portrait["width"], portrait["height"]), ("512", "512"))
+        self.assertNotEqual(portrait.get("loading"), "lazy")
+        image_bytes = (ROOT / "assets/portrait.webp").read_bytes()
+        self.assertEqual(image_bytes[:4], b"RIFF")
+        self.assertEqual(image_bytes[8:12], b"WEBP")
+        self.assertLess(len(image_bytes), 100_000)
+        self.assertIn("assets/portrait.css", self.documents["index.html"].assets)
+
     def test_metadata_and_hosting(self):
         html = (ROOT / "index.html").read_text(encoding="utf-8")
         matches = re.findall(r'<script type="application/ld\+json">\s*(.*?)\s*</script>', html, re.S)

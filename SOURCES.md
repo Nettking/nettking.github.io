@@ -36,3 +36,7 @@ The site describes this as a former role without inventing exact term dates.
 ## Identity and design
 
 The GitHub identity `Nettking` is the owner's supplied account. No unverified ORCID, Google Scholar profile, external employment, or social account is assigned to Martin. No private contact details are used. All visual decoration is generic typography and geometry, not a research model or architecture. No third-party portrait, photograph, institutional logo, or paper PDF is redistributed.
+
+## Profile photograph
+
+`assets/portrait.webp` is the original photograph supplied by Martin for this website, used at his explicit request on 14 September 2026. It has only been resized to 512 × 512 pixels and encoded as WebP for efficient delivery; no generative retouching, replacement background, or facial alteration has been applied. The published asset contains no EXIF metadata. This permission is for use on this site and does not grant a general reuse licence.
