@@ -1,14 +1,42 @@
 {
-  "reviewed_on": "2026-09-14",
+  "reviewed_on": "2026-10-13",
   "policy": "Only verified, formally published research. A public repository or preprint alone is not publication clearance.",
   "publications": [
+    {
+      "id": "haugen2027dartwinlanguage",
+      "status": "published",
+      "title": "Evolving the DarTwin evolution language",
+      "year": 2027,
+      "first_published": "2026-09-23",
+      "doi": "10.1007/s11334-026-00647-3",
+      "authors": [
+        "Øystein Haugen",
+        "Martin Arthur Andersen",
+        "Stefan Klikovits",
+        "Francis Bordeleau",
+        "Joost Mertens",
+        "Joachim Denil"
+      ],
+      "venue": "Innovations in Systems and Software Engineering",
+      "volume": "23",
+      "article_number": "1",
+      "publication_evidence": "https://link.springer.com/article/10.1007/s11334-026-00647-3"
+    },
     {
       "id": "haugen2025dartwin",
       "status": "published",
       "title": "DarTwin made precise by SysMLv2 – An Experiment",
       "year": 2025,
       "doi": "10.1109/MODELS-C68889.2025.00051",
-      "authors": ["Øystein Haugen", "Stefan Klikovits", "Martin Arthur Andersen", "Jonathan Beaulieu", "Francis Bordeleau", "Joachim Denil", "Joost Mertens"],
+      "authors": [
+        "Øystein Haugen",
+        "Stefan Klikovits",
+        "Martin Arthur Andersen",
+        "Jonathan Beaulieu",
+        "Francis Bordeleau",
+        "Joachim Denil",
+        "Joost Mertens"
+      ],
       "pages": "322–332",
       "venue": "SAM 2025, in ACM/IEEE MODELS-C 2025",
       "publication_evidence": "https://research.jku.at/en/publications/dartwin-made-precise-by-sysmlv2-an-experiment/",

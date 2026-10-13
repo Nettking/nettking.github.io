@@ -1,6 +1,6 @@
 # Public content provenance
 
-Reviewed **14 September 2026**. This file records only public information included on the site; it is not a list of excluded work.
+Reviewed **13 October 2026**. This file records only public information included on the site; it is not a list of excluded work.
 
 ## Current institutional name
 
@@ -76,3 +76,15 @@ HiØ’s indexed official pages establish the institutional names:
 - Additional English department-name evidence: https://www.hiof.no/english/studies/courses/iio/itk/
 
 These names were checked against HiØ search-index results on 14 September 2026. Direct retrieval of the faculty and department homepages returned HTTP 403. Institutional-name sources support the names, not Martin’s committee memberships; current membership is owner-confirmed as recorded above. The Norwegian abbreviations are retained after their English organisational names, with full Norwegian names on the CV page.
+
+## New journal publication and linked software (13 October 2026)
+
+**Evolving the DarTwin evolution language** — original research article, Springer Nature:
+https://link.springer.com/article/10.1007/s11334-026-00647-3
+
+Springer confirms all six authors in this order: Øystein Haugen, Martin Arthur Andersen, Stefan Klikovits, Francis Bordeleau, Joost Mertens, and Joachim Denil. The version of record was published online on 23 September 2026; its journal citation is *Innovations in Systems and Software Engineering*, volume 23, article 1 (2027). The website shows the online year 2026, while the BibTeX follows the publisher's 2027 volume citation. The article summary paraphrases the published abstract. No publisher PDF is copied.
+
+**Federated Capability Platform (FCP / MSH)** — public project repository:
+https://github.com/Nettking/msh
+
+The owner explicitly requested this repository link on 13 October 2026. The short public project description is confined to the linked repository's public README and makes no release, deployment, acceptance, performance, or research-publication claims.

@@ -8,3 +8,7 @@
 @media(max-width:370px){.container{width:calc(100% - 32px)}.wordmark>span:last-child{font-size:.73rem}.hero-copy h1{font-size:3.05rem}.affiliation-strip>div{font-size:.68rem}.publication{padding:19px}.contact-section{padding:23px}.contact-email{font-size:.87rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{html{scroll-padding-top:0}body{background:white!important;color:#111!important;font-size:11pt}.site-header,.site-footer,.skip-link,.cv-tools,.hero-art,.theme-toggle,.copy-button{display:none!important}.container{width:100%;max-width:none}.cv-main{padding:0}.cv-header{padding-bottom:14pt;margin-bottom:10pt}.cv-header h1{font-size:28pt}.cv-section{padding-block:13pt;gap:20pt;grid-template-columns:110pt 1fr;break-inside:avoid}.cv-section h2{color:#111!important}.cv-section p{font-size:10pt}.cv-section a{color:#111!important}.cv-header .eyebrow,.muted,.micro-label{color:#444!important}.cv-header p{font-size:10pt}.contact-section,.publication-section{background:white;color:#111}.contact-section p:not(.eyebrow),.contact-section .eyebrow{color:#111}.hero,.section{padding-block:20pt}.contact-section{break-inside:avoid}@page{margin:16mm}}
+
+/* Multiple reviewed publications and compact responsive navigation. */
+.publication+.publication{margin-top:22px}
+@media(max-width:760px){nav{flex-wrap:wrap;justify-content:flex-start;column-gap:14px;row-gap:6px}}
