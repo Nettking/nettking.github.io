@@ -88,3 +88,7 @@ Springer confirms all six authors in this order: Øystein Haugen, Martin Arthur 
 https://github.com/Nettking/msh
 
 The owner explicitly requested this repository link on 13 October 2026. The short public project description is confined to the linked repository's public README and makes no release, deployment, acceptance, performance, or research-publication claims.
+
+## Central PhD programme committee selection (13 October 2026)
+
+Martin confirmed on 13 October 2026 that he has recently been accepted to **Sentralt ph.d.-programutvalg** at Østfold University of Applied Sciences. The site describes this as a 2026 selection for the central PhD programme committee, rather than asserting when service formally begins or identifying a specific representative category or remit. “Central PhD Programme Committee” is a descriptive English rendering of Martin's Norwegian title, not a claim about a formally adopted English title.

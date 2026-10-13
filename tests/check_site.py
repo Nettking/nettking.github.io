@@ -162,6 +162,7 @@ class SiteChecks(unittest.TestCase):
                 "Faculty of Computer Science, Engineering and Economics (IIØ)",
                 "Department of Computer Science and Communication (ITK)",
                 "Social committee member", "Student Leader", "2024–2025",
+                "Sentralt ph.d.-programutvalg", "Central PhD Programme Committee",
             ):
                 with self.subTest(page=page, expected=expected):
                     self.assertIn(expected, text)
